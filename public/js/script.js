@@ -1,19 +1,20 @@
-const express = require("express");
-const app = express();
+//FRONTEND script for DOM manipulation
+// archives inside the public folder are accesible for the DOM (browser)
 
-("use strict");
+"use strict";
 
 /**
  * Handle mobile menu functionality to hide/reveal sidebar on mobile layouts
  */
 const body = document.querySelector("body");
+const menuButton = document.querySelector("#menu-icon");
+
 let headerBtnClicked = false;
 
-document.querySelector("#menu-icon").addEventListener("click", (e) => {
-  !headerBtnClicked
-    ? (body.style.transform = "translateX(300px)")
-    : (body.style.transform = "translateX(0px)");
-  return (headerBtnClicked = !headerBtnClicked);
-});
+menuButton.addEventListener("click", () => {
+  body.style.transform = headerBtnClicked
+    ? "translateX(0px)"
+    : "translateX(300px)";
 
-app.listen(3000);
+  headerBtnClicked = !headerBtnClicked;
+});

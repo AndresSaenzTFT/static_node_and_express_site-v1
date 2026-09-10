@@ -1,0 +1,39 @@
+{
+    "projects":[
+        {
+            "id":0,
+            "project_title": "the first title",
+            "project_name":"sdfgsdfgsdfg",
+            "description":"THIS IS A TEST 1",
+            "technologies":["SI FUNCIONA LA INTERPOLACION","OOHH TSIII"],
+            "live_link":"https://www.youtube.com/watch?v=Od6M0AXpcxQ",
+            "github_link":"",
+            "image_urls":["/static/images/IMAGETESTPRO.png",""]
+
+        },
+         {
+            "id":1,
+                        "project_title": "the first title",
+            "project_name":"TEST 2",
+            "description":"THIS IS A TEST 2",
+            "technologies":["PYTHON ","NEXT JS"],
+            "live_link":"https://www.youtube.com/watch?v=Od6M0AXpcxQ",
+            "github_link":"https://www.youtube.com/watch?v=Od6M0AXpcxQ",
+            "image_urls":["/static/images/IMAGETESTPRO.png",""]
+
+        },
+         {
+            "id":1,
+                        "project_title": "the first title",
+
+            "project_name":"TEST 3",
+            "description":"THIS IS A TEST 2",
+            "technologies":["PYTHON ","NEXT JS"],
+            "live_link":"https://www.youtube.com/watch?v=Od6M0AXpcxQ",
+            "github_link":"https://www.youtube.com/watch?v=Od6M0AXpcxQ",
+            "image_urls":["/static/images/IMAGETESTPRO.png",""]
+
+        }
+
+    ]
+}

@@ -37,7 +37,7 @@ app.get("/:id", (req, res) => {
   const { id } = req.params; //store the number in the path so we can target the corresponding project in Data
 
   //Target each property with the
-  const projectNo = projects[id];
+  const projectNo = id;
   const projectTitle = projects[id].project_title;
   const projectName = projects[id].project_name;
   const projectDesc = projects[id].description;

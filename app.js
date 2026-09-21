@@ -32,11 +32,13 @@ app.get("/", (req, res) => {
 app.get("/about", (req, res) => {
   res.render("about");
 });
-//project routes id, in this path the id will be equal to the project id property value
+
+//project routes id, in this path the id will be equal to the project id property value in the data file
 app.get("/:id", (req, res) => {
   const { id } = req.params; //store the number in the path so we can target the corresponding project in Data
 
-  //Target each property with the
+  //Set prepare the data so the pug template can access the data.
+  //Target each property of the
   const projectNo = id;
   const projectTitle = projects[id].project_title;
   const projectName = projects[id].project_name;
@@ -46,6 +48,7 @@ app.get("/:id", (req, res) => {
   const proGitlink = projects[id].github_link;
   const proImgs = projects[id].image_urls;
 
+  //set all data in a single obj so the template can access the data by the property name and its value
   const templateData = {
     projectNo,
     projectTitle,
@@ -61,3 +64,4 @@ app.get("/:id", (req, res) => {
 });
 
 app.listen(3000);
+console.log("running on port 3000");

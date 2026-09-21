@@ -2,36 +2,46 @@
     "projects":[
         {
             "id":0,
-            "project_title": "the first title",
-            "project_name":"sdfgsdfgsdfg",
-            "description":"THIS IS A TEST 1",
-            "technologies":["SI FUNCIONA LA INTERPOLACION","OOHH TSIII"],
+            "project_title": "A RANDOM QUOTE GENERATOR",
+            "project_name":"RANDOM QUOTE GENERATOR",
+            "description":"This is a project of a random quote generator",
+            "technologies":["JavaScript","CSS","HTML"],
             "live_link": "/0",
             "github_link":"",
-            "image_urls":["/static/images/IMAGETESTPRO.png","/static/images/proyecto1.png"]
+            "image_urls":["/static/images/rdnmquote.jpg","/static/images/project0.png","/static/images/project0-2.png"]
 
         },
          {
             "id":1,
-                        "project_title": "the first title",
-            "project_name":"TEST 2",
+            "project_title": "How to paginate and filter data",
+            "project_name":"LIST PAGINATION AND FILTERING",
             "description":"THIS IS A TEST 2",
             "technologies":["PYTHON ","NEXT JS"],
             "live_link":"/1",
             "github_link":"https://www.youtube.com/watch?v=Od6M0AXpcxQ",
-            "image_urls":["/static/images/IMAGETESTPRO.png","/static/images/proyecto2.png"]
+            "image_urls":["/static/images/proyecto2.png"]
 
         },
          {
             "id":2,
-                        "project_title": "the first title",
-
-            "project_name":"TEST 3",
+            "project_title": "DOM Manipulation and error handling for Interactive Form",
+            "project_name":"INTERACTIVE FORM",
             "description":"THIS IS A TEST 2",
             "technologies":["PYTHON ","NEXT JS"],
             "live_link":"/2",
             "github_link":"https://www.youtube.com/watch?v=Od6M0AXpcxQ",
-            "image_urls":["/static/images/IMAGETESTPRO.png","/static/images/proyecto3.png"]
+            "image_urls":["/static/images/proyecto3.png"]
+
+        },
+         {
+            "id":3,
+            "project_title": "the first title",
+            "project_name":"INTERACTIVE FORM",
+            "description":"THIS IS A TEST 2",
+            "technologies":["PYTHON ","NEXT JS"],
+            "live_link":"/2",
+            "github_link":"https://www.youtube.com/watch?v=Od6M0AXpcxQ",
+            "image_urls":["/static/images/proyecto3.png"]
 
         }
 

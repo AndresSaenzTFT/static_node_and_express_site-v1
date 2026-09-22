@@ -72,5 +72,15 @@ app.use((req, res) => {
   res.render("notfound");
 });
 
+app.use((err, req, res, next) => {
+  err.status = err.status || 500;
+  err.message = err.message || "Internal Server Error";
+
+  console.log(err.message);
+  console.log(err.status);
+
+  return res.status(err.status).send(err.message);
+});
+
 app.listen(3000);
 console.log("running on port 3000");

@@ -35,23 +35,27 @@ app.get("/about", (req, res) => {
 
 //project routes id, in this path the id will be equal to the project id property value in the data file
 app.get("/:id", (req, res) => {
-  const { id } = req.params; //store the number in the path so we can target the corresponding project in Data
+  const { id } = req.params;
 
-  //Set prepare the data so the pug template can access the data.
-  //Target each property of the
+  // Ignore requests that do not match a project, such as /favicon.ico
+  const project = projects.find((item) => String(item.id) === id);
+
+  if (!project) {
+    return res.status(404).render("notfound");
+  }
+
   const projectNo = id;
-  const projectTitle = projects[id].project_title;
-  const projectName = projects[id].project_name;
+  const projectName = projects[id].name;
   const projectDesc = projects[id].description;
   const projectTech = projects[id].technologies;
   const projectLive = projects[id].live_link;
   const proGitlink = projects[id].github_link;
   const proImgs = projects[id].image_urls;
+  const title = projects[id].title;
 
-  //set all data in a single obj so the template can access the data by the property name and its value
   const templateData = {
     projectNo,
-    projectTitle,
+    title,
     projectName,
     projectDesc,
     projectTech,
@@ -61,6 +65,11 @@ app.get("/:id", (req, res) => {
   };
 
   res.render("project", templateData);
+});
+
+app.use((req, res) => {
+  res.status(404).render("404");
+  res.render("notfound");
 });
 
 app.listen(3000);

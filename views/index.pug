@@ -5,10 +5,10 @@ block content
   article.portfolio-intro
 
     //- Replace with your own heading like 'My Portfolio', or 'Hey, Potential Employers', or 'Let's make the web great together!' 
-    h1 Heading
+    h1 My FullStack JavaScript Portfolio
 
     //- Replace with a description for your portfolio, what this project is, it's purpose, what it's supposed to accomplish, etc. 
-    p Portfolio description
+    p Welcome to my Web Development Portfolio. This collection showcases projects built using HTML, CSS, and JavaScript, demonstrating my ability to create responsive, interactive, and user-friendly web applications. Throughout these projects, I have focused on developing clean and maintainable code, implementing modern design principles, and enhancing user experiences through dynamic functionality.
 
 
   article.portfolio-project-thumbs
@@ -16,9 +16,9 @@ block content
 
       each project in data
         .cell
-          a(href=project.live_link)
-            img.thumbnail(src=project.image_urls[0], alt=project.project_name)
-            h5= project.project_name
+          a(href=`${project.id}`)
+            img.thumbnail(src=project.image_urls[0], alt=project.title)
+            h5= project.name
 
   
 

@@ -2,48 +2,57 @@
     "projects":[
         {
             "id":0,
-            "project_title": "A RANDOM QUOTE GENERATOR",
-            "project_name":"RANDOM QUOTE GENERATOR",
+            "title": "A RANDOM QUOTE GENERATOR",
+            "name":"RANDOM QUOTE GENERATOR",
             "description":"This is a project of a random quote generator",
             "technologies":["JavaScript","CSS","HTML"],
-            "live_link": "/0",
-            "github_link":"",
+            "live_link": "https://andressaenztft.github.io/a_random_quote_generator-v1/",
+            "github_link":"https://github.com/AndresSaenzTFT/a_random_quote_generator-v1",
             "image_urls":["/static/images/rdnmquote.jpg","/static/images/project0.png","/static/images/project0-2.png"]
 
         },
          {
             "id":1,
-            "project_title": "How to paginate and filter data",
-            "project_name":"LIST PAGINATION AND FILTERING",
-            "description":"THIS IS A TEST 2",
-            "technologies":["PYTHON ","NEXT JS"],
-            "live_link":"/1",
-            "github_link":"https://www.youtube.com/watch?v=Od6M0AXpcxQ",
-            "image_urls":["/static/images/proyecto2.png"]
+            "title": "How to paginate and filter data",
+            "name":"LIST PAGINATION AND FILTERING",
+            "description":"This is a project of data pagination and filtering",
+            "technologies":["JavaScript","CSS","HTML"],
+            "live_link":"https://andressaenztft.github.io/data-pagination-and-filtering-v1/",
+            "github_link":"https://github.com/AndresSaenzTFT/a_random_quote_generator-v1",
+            "image_urls":["/static/images/pagination.png","/static/images/proyecto2.png"]
 
         },
          {
             "id":2,
-            "project_title": "DOM Manipulation and error handling for Interactive Form",
-            "project_name":"INTERACTIVE FORM",
-            "description":"THIS IS A TEST 2",
-            "technologies":["PYTHON ","NEXT JS"],
-            "live_link":"/2",
-            "github_link":"https://www.youtube.com/watch?v=Od6M0AXpcxQ",
-            "image_urls":["/static/images/proyecto3.png"]
+            "title": "DOM Manipulation and error handling for Interactive Form",
+            "name":"INTERACTIVE FORM",
+            "description":"This is a project of a form with error handlers",
+            "technologies":["JavaScript","CSS","HTML"],
+            "live_link":"https://andressaenztft.github.io/interactive-form-v3/",
+            "github_link":"https://github.com/AndresSaenzTFT/interactive-form-v3",
+            "image_urls":["/static/images/Screenshot_1.png"]
 
         },
          {
             "id":3,
-            "project_title": "the first title",
-            "project_name":"INTERACTIVE FORM",
-            "description":"THIS IS A TEST 2",
-            "technologies":["PYTHON ","NEXT JS"],
-            "live_link":"/2",
-            "github_link":"https://www.youtube.com/watch?v=Od6M0AXpcxQ",
-            "image_urls":["/static/images/proyecto3.png"]
+            "title": "Use OOP to create a game!",
+            "name":"Phrase Hunter",
+            "description":"Click the letters in the screen and guess the phrase",
+            "technologies":["JavaScript","CSS","HTML"],
+            "live_link":"https://andressaenztft.github.io/oop_game-v2/",
+            "github_link":"https://github.com/AndresSaenzTFT/oop_game-v2",
+            "image_urls":["/static/images/phraseguesser.png"]
 
+        },
+         {
+            "id":4,
+            "title": "How to use async and API requests",
+            "name":"API Req Directory",
+            "description":"Api requests for students data, and display the data",
+            "technologies":["JavaScript","CSS","HTML"],
+            "live_link":"https://andressaenztft.github.io/student-files/",
+            "github_link":"https://github.com/AndresSaenzTFT/student-files",
+            "image_urls":["/static/images/employeedirectory.png"]
         }
-
     ]
 }

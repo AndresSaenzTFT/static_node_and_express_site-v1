@@ -44,42 +44,22 @@ app.get("/:id", (req, res) => {
     return res.status(404).render("notfound");
   }
 
-  const projectNo = id;
-  const projectName = projects[id].name;
-  const projectDesc = projects[id].description;
-  const projectTech = projects[id].technologies;
-  const projectLive = projects[id].live_link;
-  const proGitlink = projects[id].github_link;
-  const proImgs = projects[id].image_urls;
-  const title = projects[id].title;
-
   const templateData = {
-    projectNo,
-    title,
-    projectName,
-    projectDesc,
-    projectTech,
-    projectLive,
-    proGitlink,
-    proImgs,
+    projectNo: project.id,
+    title: project.title,
+    projectName: project.name,
+    projectDesc: project.description,
+    projectTech: project.technologies,
+    projectLive: project.live_link,
+    proGitlink: project.github_link,
+    proImgs: project.image_urls,
   };
 
   res.render("project", templateData);
 });
 
 app.use((req, res) => {
-  res.status(404).render("404");
-  res.render("notfound");
-});
-
-app.use((err, req, res, next) => {
-  err.status = err.status || 500;
-  err.message = err.message || "Internal Server Error";
-
-  console.log(err.message);
-  console.log(err.status);
-
-  return res.status(err.status).send(err.message);
+  res.status(404).render("notfound");
 });
 
 app.listen(3000);

@@ -1,0 +1,149 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title 404 - Page Not Found
+
+    style.
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background: #121212;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        overflow: hidden;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 7rem;
+        color: #8d8d8d;
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
+
+      p {
+        color: #bdbdbd;
+        margin-bottom: 30px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 15px 30px;
+        background: #444;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: .3s;
+        font-weight: bold;
+      }
+
+      .btn:hover {
+        background: #666;
+        transform: translateY(-3px);
+      }
+
+      .shark {
+        width: 220px;
+        height: 100px;
+        background: #5a5a5a;
+        border-radius: 60px 80px 40px 60px;
+        position: relative;
+        margin: 40px auto;
+        animation: swim 4s ease-in-out infinite;
+      }
+
+      .shark::before {
+        content: "";
+        position: absolute;
+        top: -40px;
+        left: 80px;
+        width: 0;
+        height: 0;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-bottom: 50px solid #5a5a5a;
+      }
+
+      .shark::after {
+        content: "";
+        position: absolute;
+        right: -45px;
+        top: 15px;
+        width: 0;
+        height: 0;
+        border-top: 35px solid transparent;
+        border-bottom: 35px solid transparent;
+        border-left: 50px solid #5a5a5a;
+      }
+
+      .eye {
+        width: 10px;
+        height: 10px;
+        background: black;
+        border-radius: 50%;
+        position: absolute;
+        top: 30px;
+        left: 40px;
+      }
+
+      .mouth {
+        width: 70px;
+        height: 25px;
+        border-bottom: 3px solid black;
+        position: absolute;
+        left: 20px;
+        top: 50px;
+      }
+
+      .teeth {
+        position: absolute;
+        left: 18px;
+        top: 60px;
+        color: white;
+        font-size: 12px;
+        letter-spacing: 2px;
+      }
+
+      @keyframes swim {
+        0%, 100% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(20px);
+        }
+      }
+
+  body
+    .container
+      h1 404
+
+      .shark
+        .eye
+        .mouth
+        .teeth VVVVVV
+
+      h2 Oops! Wrong Waters...
+
+      p
+        | This page doesn't exist or the link isn't correct.
+        br
+        | My shark couldn't find what you're looking for.
+
+      a.btn(href="/") Back to Portfolio

@@ -37,8 +37,7 @@ app.get("/about", (req, res) => {
 app.get("/:id", (req, res) => {
   const { id } = req.params;
 
-  // Ignore requests that do not match a project, such as /favicon.ico
-  const project = projects.find((item) => String(item.id) === id);
+  const project = projects.find((item) => String(item.id) === id); // take the only object that is related to the path id
 
   if (!project) {
     return res.status(404).render("notfound");

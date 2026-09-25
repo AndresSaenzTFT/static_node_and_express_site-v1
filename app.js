@@ -44,6 +44,7 @@ app.get("/:id", (req, res) => {
     return res.status(404).render("notfound");
   }
 
+  //use the const project and its properties
   const templateData = {
     projectNo: project.id,
     title: project.title,
@@ -56,10 +57,6 @@ app.get("/:id", (req, res) => {
   };
 
   res.render("project", templateData);
-});
-
-app.use((req, res) => {
-  res.status(404).render("notfound");
 });
 
 app.listen(3000);

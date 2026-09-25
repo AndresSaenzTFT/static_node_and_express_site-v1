@@ -42,7 +42,6 @@ app.get("/:id", (req, res) => {
   if (!project) {
     return res.status(404).render("notfound");
   }
-
   //use the const project and its properties
   const templateData = {
     projectNo: project.id,
@@ -56,6 +55,10 @@ app.get("/:id", (req, res) => {
   };
 
   res.render("project", templateData);
+});
+
+app.use((req, res) => {
+  res.status(404).render("notfound"); //with this handler i target the 404 error and render my pug page
 });
 
 app.listen(3000);

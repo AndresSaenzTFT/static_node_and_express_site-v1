@@ -34,7 +34,7 @@ app.get("/about", (req, res) => {
 });
 
 //project routes id, in this path the id will be equal to the project id property value in the data file
-app.get("/:id", (req, res) => {
+app.get("/project/:id", (req, res) => {
   const { id } = req.params;
 
   const project = projects.find((item) => String(item.id) === id); // take the only object that is related to the path id
